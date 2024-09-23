@@ -14,6 +14,7 @@ inspired by:
 [ADHD Gaming - YouTube](https://www.youtube.com/shorts/e4-I4nmNAHE) - piratesoftware
 
 *PS: you can always mention this site on his stream!*
+*also, if you get his attention on stream please send me a vod/clip or make an issue and show it, it means lots to us*
 
 
 
