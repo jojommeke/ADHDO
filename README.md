@@ -1,3 +1,6 @@
+
+# WARNING: this website/project is still in construction
+
 # ADHDO
 
 ### *A project aiming to motivate users with ADHD to do their todos*
