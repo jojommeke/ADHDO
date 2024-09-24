@@ -1,6 +1,13 @@
 
 # WARNING: this website/project is still in construction, see [concept](https://www.figma.com/design/4oQAVbVAIkAp54aqQJOVJl/ADHDO?node-id=0-1&t=140X8T2XPBaXIYIV-1)
 
+- [ ] make website on github pages
+- [ ] backend (accounts,login, sync)
+- [ ] android app
+- [ ] android app on f-droid
+- [ ] android app on playstore
+- [ ] ios app(maybe???)
+
 # ADHDO
 
 ### *A project aiming to motivate users with ADHD to do their todos*
@@ -62,6 +69,9 @@ Ari Liu (javascript)
 
 - YOU
 
+## Technical stuff:
+
+made with tailwind css, react and concept design with figma
 
 
 *PS: we aim to only pay for the website hosting/domain and other things related to this project with your donation money!*
