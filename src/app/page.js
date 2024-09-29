@@ -6,8 +6,11 @@ const kranky = Kranky({
   weight: ['400'],
   style: ['normal']
 })
+
 export default function Home() {
   return (
-    <div className="flex self-center justify-center bg-gradient-to-r from-red-500 to-purple-950 text-center place-items-center"></div>
+    <div className="flex self-center items-center justify-items-center justify-self-center text-center p-7" >
+      <p className={`${kranky.className} m-auto normal text-6xl select-none`}>ADHDO</p>
+    </div >
   );
 }
