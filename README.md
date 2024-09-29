@@ -71,7 +71,7 @@ Ari Liu (javascript)
 
 ## Technical stuff:
 
-made with tailwind css, react and concept design with figma
+made with nextjs, tailwind css, react and concept design with figma
 
 
 *PS: we aim to only pay for the website hosting/domain and other things related to this project with your donation money!*
