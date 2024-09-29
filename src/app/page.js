@@ -8,8 +8,6 @@ const kranky = Kranky({
 })
 export default function Home() {
   return (
-    <div className="flex self-center justify-center bg-gradient-to-r from-red-500 to-purple-950 h-screen text-center place-items-center">
-      <p className={`${kranky.className} text-[10vw] drop-shadow-xl text-auto m-1 truncate select-none`}>in development</p>
-    </div>
+    <div className="flex self-center justify-center bg-gradient-to-r from-red-500 to-purple-950 text-center place-items-center"></div>
   );
 }

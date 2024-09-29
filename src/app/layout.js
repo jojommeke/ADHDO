@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <meta name="darkreader-lock"></meta>
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('https://rare-gallery.com/uploads/posts/5377655-mountain-forest-moody-mist-fog-slope-ridge-landscape-layers-misty-foggy-landscape-nature-mood-forest-light-forest-mood-hillside-adventure-travel-explore-discover-free-images.jpg')] bg-fixed bg-cover bg-center`}
       >
         {children}
       </body>
