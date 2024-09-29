@@ -15,11 +15,15 @@ const geistMono = localFont({
 export const metadata = {
   title: "ADHDO",
   description: "todo for people with adhd",
+  keywords: ["adhd", "todo", "list", "help"]
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="darkreader-lock"></meta>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
