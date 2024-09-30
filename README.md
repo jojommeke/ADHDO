@@ -10,7 +10,7 @@
 
 # ADHDO
 
-### *A project aiming to motivate users with ADHD to do their todos*
+### *A todo app aiming to motivate people with ADHD*
 
 
 
