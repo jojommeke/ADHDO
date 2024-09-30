@@ -10,7 +10,7 @@ const kranky = Kranky({
 export default function Home() {
   return (
     <div className="flex self-center items-center justify-items-center justify-self-center text-center p-7" >
-      <p className={`${kranky.className} m-auto normal text-6xl select-none`}>ADHDO</p>
+      <p className={`${kranky.className} m-auto truncate normal text-6xl select-none text-white drop-shadow-md`}>ADHDO</p>
     </div >
   );
 }
