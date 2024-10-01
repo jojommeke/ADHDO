@@ -9,7 +9,7 @@ const kranky = Kranky({
 })
 
 function Action(props) {
-  return <div id={props.id} alt={props.id} className={"mx-2 size-12 rounded-lg flex justify-center flex-col shadow-md" + " " + "bg-[" + props.color + "]"} style={{ 'background': props.color }}>
+  return <div id={props.id} alt={props.id} className={"mx-2 size-12 rounded-lg flex justify-center flex-col shadow-md"} style={{ 'background': props.color }}>
     <span className="material-symbols-outlined text-center select-none text-white">
       {props.icon}
     </span>
@@ -20,16 +20,16 @@ function Divider() {
   return <div id="line" className="w-[80vw] backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10" />;
 }
 
-function Headlogo() {
+function Headlogo(props) {
   return <div id="logodiv" className="flex self-center items-center justify-items-center justify-self-center text-center pt-7 flex-row justify-center" >
-    <p id="logo" className={`${kranky.className} truncate normal text-6xl select-none text-white drop-shadow-md`}>ADHDO</p>
+    <p id="logo" className={`${kranky.className} truncate normal text-6xl select-none text-white drop-shadow-md`}>{props.headline}</p>
   </div>;
 }
 
 export default function site() {
   return (
     <div id="site">
-      <Headlogo />
+      <Headlogo headline="ADHDO" />
       <Divider />
       <div id="actions" className="flex flex-row h-auto w-[100vw] justify-center justify-self-center">
         <Action icon="add" id="add" color="#722f37" />
