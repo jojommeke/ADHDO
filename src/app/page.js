@@ -9,7 +9,7 @@ const kranky = Kranky({
 })
 
 function Action(props) {
-  return <div id={props.id} className={"size-12 rounded-lg flex justify-center flex-col shadow-md" + " " + "bg-[" + props.color + "]"} style={{ 'background': props.color }}>
+  return <div id={props.id} className={"mx-2 size-12 rounded-lg flex justify-center flex-col shadow-md" + " " + "bg-[" + props.color + "]"} style={{ 'background': props.color }}>
     <span className="material-symbols-outlined text-center select-none text-white">
       {props.icon}
     </span>
@@ -32,6 +32,8 @@ export default function site() {
       <Headlogo />
       <Divider />
       <div id="actions" className="flex flex-row h-auto w-[100vw] justify-center justify-self-center">
+        <Action icon="add" id="add" color="#722f37" />
+        <Action icon="login" id="login" color="#4b3f72" />
         <Action icon="add" id="add" color="#722f37" />
       </div>
     </div>
