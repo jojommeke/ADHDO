@@ -12,9 +12,6 @@
 # next.js
 /.next/
 /out/
-next.config.js
-tailwind.config.js
-postcss.config.mjs
 
 # production
 /build
@@ -37,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# config files
+next.config.js
+postcss.config.mjs
+tailwind.config.js
