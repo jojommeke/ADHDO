@@ -10,7 +10,7 @@ const kranky = Kranky({
 
 function Action(props) {
   return <div id={props.id} className={"size-12 rounded-lg flex justify-center flex-col shadow-md" + " " + "bg-[" + props.color + "]"} style={{ 'background': props.color }}>
-    <span className="material-symbols-outlined text-center select-none">
+    <span className="material-symbols-outlined text-center select-none text-white">
       {props.icon}
     </span>
   </div>;
