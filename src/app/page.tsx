@@ -8,6 +8,14 @@ const kranky = Kranky({
   style: ['normal']
 })
 
+function Action(props) {
+  return <div id={props.id} className={"size-12 rounded-lg flex justify-center flex-col" + " " + "bg-[" + props.color + "]"}>
+    <span className="material-symbols-outlined text-center select-none">
+      {props.icon}
+    </span>
+  </div >;
+}
+
 export default function site() {
   return (
     <div id="site">
@@ -16,11 +24,7 @@ export default function site() {
       </div>
       <div id="line" className="w-[80vw] backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto" />
       <div id="actions" className="flex flex-row h-auto w-[100vw] justify-center justify-self-center mt-10">
-        <div id="add" className="size-12 rounded-lg bg-[#722f37] flex justify-center flex-col">
-          <span className="material-symbols-outlined text-center select-none">
-            add
-          </span>
-        </div>
+        <Action icon="add" id="add" color="#722f37" />
       </div>
     </div>
   );
