@@ -51,9 +51,9 @@ ADHDO is just like any other todo app **BUT** with a catch:
 
 ## Credits:
 
-Joran Hennion [yojo/jojommeke]
+Joran Hennion [yojo/jojommeke] (frontend)
 
-Ari Liu
+Ari Liu (backend)
 
 
 
