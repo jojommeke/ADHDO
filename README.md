@@ -1,7 +1,9 @@
 
 # WARNING: this website/project is still in construction, see [concept](https://www.figma.com/design/4oQAVbVAIkAp54aqQJOVJl/ADHDO?node-id=0-1&t=140X8T2XPBaXIYIV-1)
+# WARNING2: i am focusing on desktop first, mobile comes after that(this could change)
 
 - [ ] make website on github pages
+- [ ] make mobile friendly
 - [ ] backend (accounts,login, sync)
 - [ ] android app
 - [ ] android app on f-droid
@@ -51,9 +53,9 @@ ADHDO is just like any other todo app **BUT** with a catch:
 
 ## Credits:
 
-Joran Hennion [yojo/jojommeke]
+Joran Hennion [yojo/jojommeke] (frontend)
 
-Ari Liu
+Ari Liu (backend)
 
 
 
