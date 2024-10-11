@@ -19,25 +19,38 @@ function Action(props) {
 }
 
 function Divider(props) {
-  return <div id="line" className="w-[80vw] hover:blur-md hover:bg-black backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10" />;
+  return <div id="line" className="backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10" style={{ 'width': props.width }} />;
 }
 
 function Headlogo(props) {
   return <div id="logodiv" className="flex self-center items-center justify-items-center justify-self-center text-center pt-7 flex-row justify-center" >
-    <p id="logo" className={`${kranky.className} hover:text-black hover:blur-md blur-0 truncate normal text-6xl select-none text-white drop-shadow-md`}>{props.headline}</p>
+    <p id="logo" className={`${kranky.className} blur-0 truncate normal text-6xl select-none text-white drop-shadow-md`}>{props.headline}</p>
   </div>;
+}
+
+function Todo(props) {
+  return <div id="todo" className="p-10 flex flex-col w-[60%] justify-center justify-items-center bg-black bg-opacity-10 rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
+    <p className="font-extrabold mx-auto text-4xl text-white text-center portrait:text-2xl">{props.name}</p>
+    <Divider width="100%" />
+    <Progress progress={props.progress} />
+  </div>;
+}
+
+function Progress(props) {
+  return <div className="text-center text-white text-3xl portrait:text-2xl">{props.progress}</div>;
 }
 
 export default function site() {
   return (
     <div id="site">
       <Headlogo headline="ADHDO" />
-      <Divider />
-      <div id="actions" className="flex flex-row h-auto w-[100vw] justify-center justify-self-center overflow-hidden touch-pan-x">
+      <Divider width="80vw" />
+      <div id="actions" className="mb-12 flex flex-row h-auto w-[100vw] justify-center justify-self-center overflow-hidden touch-pan-x">
         <Action icon="add" id="Add" color="#722f37" />
         <Action icon="login" id="Login" color="#4b3f72" />
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
+      <Todo name="TODO NAME HERE" progress="80%" />
     </div>
   );
 }
