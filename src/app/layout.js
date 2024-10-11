@@ -1,6 +1,7 @@
 import React from 'react'
 import localFont from "next/font/local";
 import "./globals.css";
+import Image from 'next/image'
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,7 +28,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('https://rare-gallery.com/uploads/posts/5377655-mountain-forest-moody-mist-fog-slope-ridge-landscape-layers-misty-foggy-landscape-nature-mood-forest-light-forest-mood-hillside-adventure-travel-explore-discover-free-images.jpg')] bg-fixed bg-cover bg-center`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('bg.jpg')] bg-fixed bg-cover bg-center`}
       >
         {children}
       </body>
