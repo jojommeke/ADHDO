@@ -19,7 +19,7 @@ function Action(props) {
 }
 
 function Divider(props) {
-  return <div id="line" className="backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10" style={{ 'width': props.width }} />;
+  return <div id="line" className="backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10 portrait:my-5" style={{ 'width': props.width }} />;
 }
 
 function Headlogo(props) {
@@ -29,7 +29,7 @@ function Headlogo(props) {
 }
 
 function Todo(props) {
-  return <div id="todo" className="p-10 flex flex-col w-[60%] portrait:w-[80%] justify-center justify-items-center bg-black bg-opacity-10 rounded-xl portrait:rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
+  return <div id="todo" className="p-10 flex flex-col w-[60%] portrait:w-[95%] justify-center justify-items-center bg-black bg-opacity-10 rounded-xl portrait:rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
     <p className="font-extrabold mx-auto text-4xl text-white text-center portrait:text-2xl">{props.name}</p>
     <Divider width="100%" />
     <Progress progress={props.progress} color={props.color} />
@@ -38,15 +38,15 @@ function Todo(props) {
 
 function getColor(value) {
   // color algorithm i totally not stole from stack overflow, be honest you would too
-  var hue = ((value) * 120).toString(10);
+  var hue = ((value) * 120).toString(10); // no idea what this does lmao ;)
   return ["hsl(", hue, ",100%,20%)"].join(""); // changed the values here though so i'd call it original
 }
 
 function Progress(props) {
   const progress = props.progress.replace(/%/g, '');
   return <div className="text-center text-white text-3xl portrait:text-2xl w-full flex justify-center">
-    <div className="border-white border-opacity-50 border-4 rounded-xl h-auto flex justify-center text-center portrait:rounded-lg" style={{ 'width': props.progress, 'background-color': getColor(progress / 100) }}>
-      <p className="select-none text-md portrait:text-md m-auto py-2 portrait:py-1 truncate">{props.progress}</p>
+    <div className="border-white border-opacity-50 border-4 portrait:border-2.5 rounded-xl h-auto flex justify-center text-center portrait:rounded-lg" style={{ 'width': props.progress, 'background-color': getColor(progress / 100) }}>
+      <p className="select-none text-md portrait:text-sm m-auto py-2 portrait:py-0.5 truncate">{props.progress}</p>
     </div>
   </div>;
 }
