@@ -9,12 +9,12 @@ const kranky = Kranky({
 })
 
 function Action(props) {
-  return <div id={props.id} alt={props.id} className={"hover:invert  hover:shadow-none mx-2 group h-12 rounded-lg flex justify-center flex-row shadow-md justify-content-center justify-items-center px-6"} style={{ 'background': props.color }}>
+  return <div id={props.id} alt={props.id} className={"hover:invert portrait:w-12 portrait:px-0 hover:shadow-none mx-2 group h-12 rounded-lg flex justify-center flex-row shadow-md justify-content-center justify-items-center px-6"} style={{ 'background': props.color }}>
     <span className="material-symbols-outlined text-center select-none text-white m-auto">
       {props.icon}
     </span>
-    <div id={`${props.id}.divider`} className="h-8 group-hover:w-0 group-hover:mx-1 rounded-full backdrop-blur-md bg-white bg-opacity-20 shadow-md w-1 my-auto mx-3" />
-    <a className={`${kranky.className} text-white truncate m-auto mx-2 select-none text-3xl drop-shadow-md group-hover:text-4xl`}>{props.id}</a>
+    <div id={`${props.id}.divider`} className="portrait:hidden h-8 group-hover:w-0 group-hover:mx-1 rounded-full backdrop-blur-md bg-white bg-opacity-20 shadow-md w-1 my-auto mx-3" />
+    <a className={`${kranky.className} text-white truncate m-auto mx-2 select-none text-3xl drop-shadow-md group-hover:text-4xl portrait:hidden`}>{props.id}</a>
   </div>;
 }
 
