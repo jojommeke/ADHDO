@@ -29,7 +29,7 @@ function Headlogo(props) {
 }
 
 function Todo(props) {
-  return <div id="todo" className="p-10 flex flex-col w-[60%] justify-center justify-items-center bg-black bg-opacity-10 rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
+  return <div id="todo" className="p-10 flex flex-col w-[60%] justify-center justify-items-center bg-black bg-opacity-10 rounded-xl portrait:rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
     <p className="font-extrabold mx-auto text-4xl text-white text-center portrait:text-2xl">{props.name}</p>
     <Divider width="100%" />
     <Progress progress={props.progress} color={props.color} />
@@ -44,7 +44,7 @@ function getColor(value) {
 
 function Progress(props) {
   const progress = props.progress.replace(/%/g, '');
-  return <div className="text-center text-white text-3xl portrait:text-2xl w-full rounded-lg flex justify-center">
+  return <div className="text-center text-white text-3xl portrait:text-2xl w-full flex justify-center">
     <div className="border-white border-opacity-50 border-4 rounded-xl h-auto flex justify-center text-center portrait:rounded-lg" style={{ 'width': props.progress, 'background-color': getColor(progress / 100) }}>
       <p className="select-none text-md portrait:text-md m-auto py-2 portrait:py-1 truncate">{props.progress}</p>
     </div>
