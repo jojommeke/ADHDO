@@ -9,7 +9,7 @@ const kranky = Kranky({
 })
 
 function Action(props) {
-  return <div id={props.id} alt={props.id} className={"hover:invert portrait:w-12 portrait:px-0 hover:shadow-none mx-2 group h-12 rounded-lg flex justify-center flex-row shadow-md justify-content-center justify-items-center px-6"} style={{ 'background': props.color }}>
+  return <div id={props.id} alt={props.id} className="hover:invert portrait:w-12 portrait:px-0 hover:shadow-none mx-2 group h-12 rounded-lg flex justify-center flex-row shadow-md justify-content-center justify-items-center px-6" style={{ 'background': props.color }}>
     <span className="material-symbols-outlined text-center select-none text-white m-auto">
       {props.icon}
     </span>
@@ -19,7 +19,7 @@ function Action(props) {
 }
 
 function Divider(props) {
-  return <div id="line" className="backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10 portrait:my-5" style={{ 'width': props.width }} />;
+  return <div id="line" className="backdrop-blur-md bg-white bg-opacity-20 shadow-md h-1 mx-auto my-10 portrait:my-6" style={{ 'width': props.width }} />;
 }
 
 function Headlogo(props) {
@@ -56,7 +56,7 @@ export default function site() {
     <div id="site">
       <Headlogo headline="ADHDO" />
       <Divider width="80vw" />
-      <div id="actions" className="mb-12 flex flex-row h-auto w-[100vw] justify-center justify-self-center overflow-hidden touch-pan-x">
+      <div id="actions" className="mb-12 portrait:mb-6 flex flex-row h-auto w-[100vw] justify-center justify-self-center overflow-hidden touch-pan-x">
         <Action icon="add" id="Add" color="#722f37" />
         <Action icon="login" id="Login" color="#4b3f72" />
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
