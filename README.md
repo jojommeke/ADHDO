@@ -1,7 +1,6 @@
 # join [https://discord.gg/3AZKjkjxzJ](https://discord.gg/3AZKjkjxzJ) for updates and support
-# MOBILE LAYOUT BROKEN, WILL FIX SOON
+# ~~MOBILE LAYOUT BROKEN, WIL FIX SOON~~ Mobile layout fixed again
 # WARNING: this website/project is still in construction, see [concept](https://www.figma.com/design/4oQAVbVAIkAp54aqQJOVJl/ADHDO?node-id=0-1&t=140X8T2XPBaXIYIV-1)
-# WARNING2: i am focusing on desktop first, mobile comes after that(this could change)
 
 - [ ] make website on github pages
 - [ ] make mobile friendly
