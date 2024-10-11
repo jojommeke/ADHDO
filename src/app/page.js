@@ -36,10 +36,17 @@ function Todo(props) {
   </div>;
 }
 
+function getColor(value) {
+  // color algorithm i totally not stole from stack overflow, be honest you would too
+  var hue = ((value) * 120).toString(10);
+  return ["hsl(", hue, ",100%,20%)"].join(""); // changed the values here though so i'd call it original
+}
+
 function Progress(props) {
-  return <div className="text-center text-white text-3xl portrait:text-2xl w-full rounded-lg">
-    <div className="border-white border-opacity-50 border-4 rounded-lg" style={{ 'width': props.progress, 'background-color': props.color }}>
-      <p className="select-none">{props.progress}</p>
+  const progress = props.progress.replace(/%/g, '');
+  return <div className="text-center text-white text-3xl portrait:text-2xl w-full rounded-lg flex justify-center">
+    <div className="border-white border-opacity-50 border-4 rounded-xl h-auto flex justify-center text-center portrait:rounded-lg" style={{ 'width': props.progress, 'background-color': getColor(progress / 100) }}>
+      <p className="select-none text-md portrait:text-md m-auto py-2 portrait:py-1 truncate">{props.progress}</p>
     </div>
   </div>;
 }
@@ -54,7 +61,7 @@ export default function site() {
         <Action icon="login" id="Login" color="#4b3f72" />
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
-      <Todo name="TODO NAME HERE" progress="80%" color="green" />
+      <Todo name="TODO NAME HERE" progress="30%" />
     </div>
   );
 }
