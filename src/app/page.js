@@ -32,12 +32,16 @@ function Todo(props) {
   return <div id="todo" className="p-10 flex flex-col w-[60%] justify-center justify-items-center bg-black bg-opacity-10 rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
     <p className="font-extrabold mx-auto text-4xl text-white text-center portrait:text-2xl">{props.name}</p>
     <Divider width="100%" />
-    <Progress progress={props.progress} />
+    <Progress progress={props.progress} color={props.color} />
   </div>;
 }
 
 function Progress(props) {
-  return <div className="text-center text-white text-3xl portrait:text-2xl">{props.progress}</div>;
+  return <div className="text-center text-white text-3xl portrait:text-2xl w-full rounded-lg">
+    <div className="border-white border-opacity-50 border-4 rounded-lg" style={{ 'width': props.progress, 'background-color': props.color }}>
+      <p className="select-none">{props.progress}</p>
+    </div>
+  </div>;
 }
 
 export default function site() {
@@ -50,7 +54,7 @@ export default function site() {
         <Action icon="login" id="Login" color="#4b3f72" />
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
-      <Todo name="TODO NAME HERE" progress="80%" />
+      <Todo name="TODO NAME HERE" progress="80%" color="green" />
     </div>
   );
 }
