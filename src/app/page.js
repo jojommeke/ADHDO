@@ -29,7 +29,7 @@ function Headlogo(props) {
 }
 
 function Todo(props) {
-  return <div id="todo" className="p-10 flex flex-col w-[60%] justify-center justify-items-center bg-black bg-opacity-10 rounded-xl portrait:rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
+  return <div id="todo" className="p-10 flex flex-col w-[60%] portrait:w-[80%] justify-center justify-items-center bg-black bg-opacity-10 rounded-xl portrait:rounded-lg border-opacity-10 border-4 border-white backdrop-blur-md m-auto">
     <p className="font-extrabold mx-auto text-4xl text-white text-center portrait:text-2xl">{props.name}</p>
     <Divider width="100%" />
     <Progress progress={props.progress} color={props.color} />
