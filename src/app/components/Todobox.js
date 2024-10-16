@@ -1,3 +1,6 @@
+import { Checkbox } from "@nextui-org/checkbox";
+// https://nextui.org/docs/components/checkbox
+
 function Todoitem(props) {
   return (
     <td>
