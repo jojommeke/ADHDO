@@ -1,6 +1,7 @@
 //import components used here
 import Divider from "./Divider";
 import Progress from "./Progress";
+import Todobox from "./Todobox";
 
 export default function Todo(props) {
   return (
@@ -13,6 +14,7 @@ export default function Todo(props) {
       </p>
       <Divider width="100%" />
       <Progress progress={props.progress} color={props.color} />
+      <Todobox />
     </div>
   );
 }
