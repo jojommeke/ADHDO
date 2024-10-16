@@ -21,7 +21,6 @@ function Action(props) {
   flex justify-center
   flex-row
   shadow-md
-  justify-content-center
   justify-items-center
   px-6
   " style={{ 'background': props.color }}>
@@ -82,7 +81,6 @@ function Headlogo(props) {
   self-center
   items-center
   justify-items-center
-  justify-self-center
   text-center
   pt-7
   flex-row
