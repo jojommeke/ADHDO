@@ -1,0 +1,5 @@
+export default function getColor(value) {
+  // color algorithm i totally not stole from stack overflow, be honest you would too
+  var hue = (value * 120).toString(10); // no idea what this does lmao ;)
+  return ["hsl(", hue, ",100%,20%)"].join(""); // changed the values here though so i'd call it original
+}

@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-import Image from 'next/image'
+import Image from "next/image";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -17,7 +17,7 @@ const geistMono = localFont({
 export const metadata = {
   title: "ADHDO",
   description: "A todo app aiming to motivate people with ADHD ",
-  keywords: ["adhd", "todo", "list", "help", "ADHDO", "ADHD"]
+  keywords: ["adhd", "todo", "list", "help", "ADHDO", "ADHD"],
 };
 
 export default function RootLayout({ children }) {
@@ -25,10 +25,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="darkreader-lock"></meta>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[url('bg.jpg')] bg-fixed bg-cover bg-center`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
       >
         {children}
       </body>

@@ -1,0 +1,32 @@
+//initialize google font
+import { Kranky } from "next/font/google";
+
+const kranky = Kranky({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal"],
+});
+
+export default function Action(props) {
+  return (
+    <div
+      id={props.id}
+      alt={props.id}
+      className="group mx-2 flex h-12 flex-row justify-center justify-items-center rounded-lg px-6 shadow-md hover:shadow-none hover:invert portrait:w-12 portrait:px-0"
+      style={{ background: props.color }}
+    >
+      <span className="material-symbols-outlined m-auto select-none text-center text-white">
+        {props.icon}
+      </span>
+      <div
+        id={`${props.id}.divider`}
+        className="mx-3 my-auto h-8 w-1 rounded-full bg-white bg-opacity-20 shadow-md backdrop-blur-md group-hover:mx-1 group-hover:w-0 portrait:hidden"
+      />
+      <a
+        className={` ${kranky.className} m-auto mx-2 select-none truncate text-3xl text-white drop-shadow-md group-hover:text-4xl portrait:hidden`}
+      >
+        {props.id}
+      </a>
+    </div>
+  );
+}
