@@ -30,7 +30,7 @@ export default function site() {
         <Action icon="login" id="Login" color="#4b3f72" />
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
-      <Todo name="TODO NAME HERE" progress="10%" />
+      <Todo name="TODO NAME HERE" progress="30%" />
     </div>
   );
 }
