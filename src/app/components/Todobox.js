@@ -1,6 +1,3 @@
-import { Checkbox } from "@nextui-org/checkbox";
-// https://nextui.org/docs/components/checkbox
-
 function Todoitem(props) {
   return (
     <td>
@@ -15,7 +12,10 @@ function Todoitem(props) {
 export default function Todobox(props) {
   return (
     <div className="m-10 table-auto rounded-lg bg-black bg-opacity-30 p-5 portrait:rounded-md">
-      <table id="todobox" class="m-auto h-auto w-auto table-auto text-white">
+      <table
+        id="todobox"
+        className="m-auto h-auto w-auto table-auto text-white"
+      >
         <thead>
           <tr>
             <th></th>
