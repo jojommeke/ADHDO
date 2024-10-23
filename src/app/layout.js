@@ -19,6 +19,7 @@ export const metadata = {
   title: "ADHDO",
   description: "A todo app aiming to motivate people with ADHD",
   keywords: ["adhd", "todo", "list", "help", "ADHDO", "ADHD"],
+  metadataBase: new URL("https://jojommeke.github.io"),
 };
 
 export const viewport = {
@@ -30,10 +31,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta
-          property="og:image"
-          content="https://jojommeke.github.io/ADHDO/opengraph-image.png"
-        />
         <meta name="darkreader-lock" />
         <meta
           property="og:description"
