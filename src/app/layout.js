@@ -17,15 +17,13 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "ADHDO",
-  description: "A todo app aiming to motivate people with ADHD ",
+  description: "A todo app aiming to motivate people with ADHD",
   keywords: ["adhd", "todo", "list", "help", "ADHDO", "ADHD"],
 };
 
 export const viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
 };
 
 export default function RootLayout({ children }) {
