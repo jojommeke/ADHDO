@@ -21,6 +21,13 @@ export const metadata = {
   keywords: ["adhd", "todo", "list", "help", "ADHDO", "ADHD"],
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
