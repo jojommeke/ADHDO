@@ -35,19 +35,11 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
       </head>
-      <Suspense
-        fallback={
-          <div className="h-full w-full bg-gradient-to-t from-red-600 to-green-800 text-white">
-            <p className="text-5xl">Loading...</p>
-          </div>
-        }
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
       >
-        <body
-          className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
-        >
-          {children}
-        </body>
-      </Suspense>
+        {children}
+      </body>
     </html>
   );
 }
