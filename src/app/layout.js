@@ -32,10 +32,6 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="darkreader-lock" />
         <meta
-          property="og:image"
-          content="https://github.com/jojommeke/ADHDO/blob/main/src/app/opengraph-image.png?raw=true"
-        />
-        <meta
           property="og:description"
           content="A todo app aiming to motivate people with ADHD"
         />
