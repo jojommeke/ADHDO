@@ -39,7 +39,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="darkreader-lock" />
-        <meta name="google-site-verification" content="0Qpz-Oyol3QXGVFIJ8ddxtbqxqIouEO7JZ8ZinxXux4" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="google-site-verification"
+          content="0Qpz-Oyol3QXGVFIJ8ddxtbqxqIouEO7JZ8ZinxXux4"
+        />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -47,7 +51,7 @@ export default function RootLayout({ children }) {
       </head>
       <Suspense fallback={<ScatterBoxLoader />}>
         <body
-          className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} portrait:scale-200 bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
         >
           {children}
         </body>
