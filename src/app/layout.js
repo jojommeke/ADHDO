@@ -2,6 +2,20 @@ import React from "react";
 import localFont from "next/font/local";
 import "./globals.css";
 import Image from "next/image";
+import { Suspense } from "react";
+
+//import loader
+import ScatterBoxLoader from "./components/Scatterboxloader";
+export const ScatterBoxLoaderComponent = () => {
+  return (
+    <>
+      <ScatterBoxLoader
+        primaryColor={"#6366F1"}
+        background={theme.colors["background"]}
+      />
+    </>
+  );
+};
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -30,11 +44,13 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
-      >
-        {children}
-      </body>
+      <Suspense fallback={<ScatterBoxLoader />}>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
+        >
+          {children}
+        </body>
+      </Suspense>
     </html>
   );
 }
