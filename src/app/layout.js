@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       </head>
       <Suspense
         fallback={
-          <div className="h-full w-full bg-black text-white">
+          <div className="h-full w-full bg-gradient-to-t from-red-600 to-green-800 text-white">
             <p className="text-5xl">Loading...</p>
           </div>
         }
