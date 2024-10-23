@@ -36,6 +36,11 @@ export default function RootLayout({ children }) {
         <meta property="og:image:width" content="<generated>" />
         <meta property="og:image:height" content="<generated>" />
         <meta
+          property="og:description"
+          content="A todo app aiming to motivate people with ADHD"
+        />
+        <meta property="og:title" content="ADHDO" />
+        <meta
           name="google-site-verification"
           content="0Qpz-Oyol3QXGVFIJ8ddxtbqxqIouEO7JZ8ZinxXux4"
         />
