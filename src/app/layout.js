@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         }
       >
         <body
-          className={`${geistSans.variable} ${geistMono.variable} overflow-scroll bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
         >
           {children}
         </body>
