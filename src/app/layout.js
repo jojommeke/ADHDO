@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta
           property="og:image"
-          content="https://jojommeke.github.io/ADHDO/opengraph-image.png?8934873046aaccf6"
+          content="https://jojommeke.github.io/ADHDO/opengraph-image.png"
         />
         <meta name="darkreader-lock" />
         <meta
