@@ -38,7 +38,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="darkreader-lock"></meta>
+        <meta name="darkreader-lock" />
+        <meta name="google-site-verification" content="0Qpz-Oyol3QXGVFIJ8ddxtbqxqIouEO7JZ8ZinxXux4" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
