@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="darkreader-lock" />
+        <meta property="og:image" content="./banner.png" />
         <meta
           name="google-site-verification"
           content="0Qpz-Oyol3QXGVFIJ8ddxtbqxqIouEO7JZ8ZinxXux4"
