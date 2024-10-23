@@ -4,19 +4,6 @@ import "./globals.css";
 import Image from "next/image";
 import { Suspense } from "react";
 
-//import loader
-import ScatterBoxLoader from "./components/Scatterboxloader";
-export const ScatterBoxLoaderComponent = () => {
-  return (
-    <>
-      <ScatterBoxLoader
-        primaryColor={"#6366F1"}
-        background={theme.colors["background"]}
-      />
-    </>
-  );
-};
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -39,7 +26,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="darkreader-lock" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="google-site-verification"
           content="0Qpz-Oyol3QXGVFIJ8ddxtbqxqIouEO7JZ8ZinxXux4"
@@ -49,9 +35,15 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
         />
       </head>
-      <Suspense fallback={<ScatterBoxLoader />}>
+      <Suspense
+        fallback={
+          <div className="h-full w-full bg-black text-white">
+            <p className="text-5xl">Loading...</p>
+          </div>
+        }
+      >
         <body
-          className={`${geistSans.variable} ${geistMono.variable} portrait:scale-200 bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
+          className={`${geistSans.variable} ${geistMono.variable} overflow-scroll bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
         >
           {children}
         </body>
