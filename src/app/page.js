@@ -31,6 +31,18 @@ export default function site() {
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
       <Todo name="TODO NAME HERE" progress="30%" />
+      <Divider width="80vw" />
+      <div
+        id="githublinks"
+        className="align-center mx-auto mb-10 flex justify-center"
+      >
+        <a
+          title="view source code"
+          href="https://github.com/jojommeke/ADHDO"
+          id="github"
+          className="size-10 rounded-full bg-[url('github.png')] bg-cover bg-center"
+        />
+      </div>
     </div>
   );
 }
