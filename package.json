@@ -1,6 +1,6 @@
 {
   "name": "adhdo",
-  "version": "0.1.0",
+  "version": "0.2.5",
   "private": false,
   "scripts": {
     "dev": "next dev",
@@ -9,7 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.2.13",
+    "next": "^14.2.13",
+    "nextjs": "^0.0.3",
     "react": "^18",
     "react-dom": "^18"
   },

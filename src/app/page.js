@@ -24,7 +24,7 @@ export default function site() {
       <Divider width="80vw" />
       <div
         id="actions"
-        className="mb-12 flex h-auto w-[100vw] flex-row justify-center justify-self-center overflow-hidden portrait:mb-6"
+        className="group/actions mx-auto mb-12 flex h-auto w-min flex-row justify-center justify-self-center overflow-hidden portrait:mb-6"
       >
         <Action icon="add" id="Add" color="#722f37" />
         <Action icon="login" id="Login" color="#4b3f72" />
