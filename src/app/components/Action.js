@@ -12,8 +12,9 @@ export default function Action(props) {
     <div
       id={props.id}
       alt={props.id}
-      className="group mx-2 flex h-12 flex-row justify-center justify-items-center rounded-lg px-6 shadow-md hover:shadow-none hover:invert portrait:w-12 portrait:px-0"
+      className="group mx-2 flex h-12 flex-row justify-center justify-items-center rounded-lg px-6 shadow-md hover:shadow-none portrait:w-12 portrait:px-0"
       style={{ background: props.color }}
+      tabindex="0"
     >
       <span className="material-symbols-outlined m-auto select-none text-center text-white">
         {props.icon}
