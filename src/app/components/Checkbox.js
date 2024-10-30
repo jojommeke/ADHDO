@@ -1,15 +1,15 @@
-// source = "https://www.material-tailwind.com/docs/html/checkbox#checkbox-with-label"
+// source = "https://www.material-tailwind.com/docs/html/checkbox"
 
 export default function Checkbox(props) {
   return (
     <div class="inline-flex items-center">
-      <label class="relative flex cursor-pointer items-center" for={props.id}>
+      <label class="relative flex cursor-pointer items-center">
         <input
           type="checkbox"
           class="peer h-5 w-5 cursor-pointer appearance-none rounded border border-slate-300 shadow transition-all checked:border-slate-800 checked:bg-blue-800 hover:shadow-md"
           id={props.id}
         />
-        <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white opacity-0 peer-checked:opacity-100">
+        <span class="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform text-white opacity-0 peer-checked:opacity-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-3.5 w-3.5"
@@ -25,12 +25,6 @@ export default function Checkbox(props) {
             ></path>
           </svg>
         </span>
-      </label>
-      <label
-        class="ml-2 mr-auto cursor-pointer text-sm text-white"
-        for={props.id}
-      >
-        {props.title}
       </label>
     </div>
   );
