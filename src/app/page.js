@@ -24,13 +24,25 @@ export default function site() {
       <Divider width="80vw" />
       <div
         id="actions"
-        className="mb-12 flex h-auto w-[100vw] flex-row justify-center justify-self-center overflow-hidden portrait:mb-6"
+        className="group/actions mx-auto mb-12 flex h-auto w-min flex-row justify-center justify-self-center overflow-hidden portrait:mb-6"
       >
         <Action icon="add" id="Add" color="#722f37" />
         <Action icon="login" id="Login" color="#4b3f72" />
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
       <Todo name="TODO NAME HERE" progress="30%" />
+      <Divider width="80vw" />
+      <div
+        id="githublinks"
+        className="align-center mx-auto mb-10 flex justify-center"
+      >
+        <a
+          title="view source code"
+          href="https://github.com/jojommeke/ADHDO"
+          id="github"
+          className="size-10 rounded-full bg-[url('github.png')] bg-cover bg-center"
+        />
+      </div>
     </div>
   );
 }
