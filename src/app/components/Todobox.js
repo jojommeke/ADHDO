@@ -15,7 +15,7 @@ function Todoitem(props) {
 
 export default function Todobox(props) {
   return (
-    <div className="m-10 rounded-lg bg-black bg-opacity-30 p-5 portrait:rounded-md">
+    <div className="m-10 rounded-lg border-2 border-white border-opacity-20 p-5 portrait:rounded-md">
       <div
         id="todobox"
         className="align-center flex h-auto w-auto items-center justify-center text-white"
