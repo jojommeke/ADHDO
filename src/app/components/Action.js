@@ -15,6 +15,7 @@ export default function Action(props) {
       className="group mx-2 flex h-12 flex-row justify-center justify-items-center rounded-lg px-6 shadow-md brightness-50 hover:shadow-none hover:brightness-100 group-[:not(:hover)]/actions:brightness-100 portrait:w-12 portrait:px-0"
       style={{ background: props.color }}
       tabindex="0"
+      title={props.id}
     >
       <span className="material-symbols-outlined m-auto select-none text-center text-white">
         {props.icon}
