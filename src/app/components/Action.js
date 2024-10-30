@@ -12,11 +12,7 @@ export default function Action(props) {
     <div
       id={props.id}
       alt={props.id}
-<<<<<<< HEAD
-      className="group mx-2 flex h-12 flex-row justify-center justify-items-center rounded-lg px-6 shadow-md hover:shadow-none portrait:w-12 portrait:px-0"
-=======
       className="group mx-2 flex h-12 flex-row justify-center justify-items-center rounded-lg px-6 shadow-md brightness-50 hover:shadow-none hover:brightness-100 group-[:not(:hover)]/actions:brightness-100 portrait:w-12 portrait:px-0"
->>>>>>> 2a137fc0db24a8ccb4e05671f59adb79c1e49da9
       style={{ background: props.color }}
       tabindex="0"
     >
