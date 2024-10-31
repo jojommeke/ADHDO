@@ -21,7 +21,7 @@ export default function site() {
   return (
     <div id="site">
       <Headlogo headline="ADHDO" />
-      <Divider width="80vw" />
+      <Divider width="80%" />
       <div
         id="actions"
         className="group/actions mx-auto mb-12 flex h-auto w-min flex-row justify-center justify-self-center overflow-hidden portrait:mb-6"
@@ -31,7 +31,7 @@ export default function site() {
         <Action icon="credit_card_heart" id="Donate" color="#357266" />
       </div>
       <Todo name="TODO NAME HERE" progress="30%" />
-      <Divider width="80vw" />
+      <Divider width="80%" />
       <div
         id="githublinks"
         className="align-center mx-auto mb-10 flex justify-center"
