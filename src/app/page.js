@@ -40,7 +40,7 @@ export default function site() {
           title="view source code"
           href="https://github.com/jojommeke/ADHDO"
           id="github"
-          className="size-10 rounded-full bg-[url('github.png')] bg-cover bg-center"
+          className="size-10 rounded-full bg-[url('github.png')] bg-cover bg-center transition-none hover:invert"
         />
       </div>
     </div>
