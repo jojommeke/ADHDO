@@ -10,8 +10,8 @@ function Todoitem(props) {
       />
       <input
         type="text"
-        placeholder="a todo"
-        className="ml-2 bg-transparent text-white"
+        placeholder="insert todo here"
+        className="ml-2 bg-transparent text-white outline-none"
       ></input>
     </div>
   );
