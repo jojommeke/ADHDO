@@ -1,4 +1,13 @@
+"use client";
+import { Input } from "postcss";
 import Checkbox from "./Checkbox.js";
+import React from "react";
+
+const onKeyDown = (e) => {
+  if (e.key == "Enter") {
+    console.log("You hit enter.");
+  }
+};
 
 // i know the math.random is a goofy solution
 function Todoitem(props) {
@@ -9,9 +18,13 @@ function Todoitem(props) {
         id={Math.floor(Math.random() * 100000)}
       />
       <input
+        id={Math.floor(Math.random() * 100000)}
         type="text"
         placeholder="insert todo here"
         className="ml-2 bg-transparent text-white outline-none"
+        onKeyDown={(e) => {
+          onKeyDown(e);
+        }}
       ></input>
     </div>
   );
@@ -24,7 +37,9 @@ export default function Todobox(props) {
         id="todobox"
         className="align-center flex h-auto w-auto items-center justify-center text-white"
       >
-        <div className="align-center mx-auto w-auto flex-col items-center justify-center">
+        <div
+          className="align-center mx-auto w-auto flex-col items-center justify-center"
+        >
           <Todoitem />
           <br />
           <Todoitem />
