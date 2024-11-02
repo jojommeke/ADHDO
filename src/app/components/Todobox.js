@@ -37,9 +37,7 @@ export default function Todobox(props) {
         id="todobox"
         className="align-center flex h-auto w-auto items-center justify-center text-white"
       >
-        <div
-          className="align-center mx-auto w-auto flex-col items-center justify-center"
-        >
+        <div className="align-center mx-auto w-auto flex-col items-center justify-center">
           <Todoitem />
           <br />
           <Todoitem />
