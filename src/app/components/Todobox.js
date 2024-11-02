@@ -8,7 +8,11 @@ function Todoitem(props) {
         title="this is the title of a todo"
         id={Math.floor(Math.random() * 100000)}
       />
-      <p className="ml-2">todo title goes here</p>
+      <input
+        type="text"
+        placeholder="a todo"
+        className="ml-2 bg-transparent text-white"
+      ></input>
     </div>
   );
 }
