@@ -1,6 +1,6 @@
 # join [https://discord.gg/3AZKjkjxzJ](https://discord.gg/3AZKjkjxzJ) for updates and support
 
-# ~~MOBILE LAYOUT BROKEN, WIL FIX SOON~~ mobile layout back to stable
+# ~~MOBILE LAYOUT BROKEN, WIL FIX SOON~~ mobile layout broken again
 
 # WARNING: this website/project is still in construction, see [concept](https://www.figma.com/design/4oQAVbVAIkAp54aqQJOVJl/ADHDO?node-id=0-1&t=140X8T2XPBaXIYIV-1)
 
