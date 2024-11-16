@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.jpg')] bg-cover bg-fixed bg-center antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} bg-[url('bg.webp')] bg-cover bg-fixed bg-center antialiased`}
       >
         {children}
       </body>
